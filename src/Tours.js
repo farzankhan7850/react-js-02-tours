@@ -8,7 +8,7 @@ const Tours = (props) => {
       </div>
       <div>
         {props.tours.map((e) => {
-          return <Tour key={e.id} {...e} />;
+          return <Tour key={e.id} {...e} removeTour={props.removeTour} />;
         })}
       </div>
     </section>
